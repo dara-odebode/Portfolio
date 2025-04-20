@@ -18,3 +18,65 @@ background-color: rgb(137, 136, 180);
 background-size: cover;
 background-position: center;
 }
+
+.container {
+  padding: 10px 10%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-size: 200%;
+  color: rgb(66, 66, 96);
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a{
+  color: #7f3a3a;
+  text-decoration: none;
+  font-size: 18px; 
+  position: relative;
+}
+
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff00f4;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+}
+
+nav ul li a:hover::after{
+  width: 100%;
+  transition: .3s;
+}
+
+.header-text {
+  margin-top: 20%;
+  font-size: 30px;
+}
+
+.header-text h1 {
+  font-size: 50px;
+  color: #ff00f4;
+  margin-top: 20px;
+}
+
+.header-text h1 span {
+  color: #7d5a7c;
+
+}
+
+
