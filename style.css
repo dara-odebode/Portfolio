@@ -6,8 +6,10 @@
 }
 
 body {
-background: #080808;
-color: #fff
+background: rgb(137, 136, 180); /*same as header*/
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 #header {
@@ -104,4 +106,109 @@ nav ul li a:hover::after{
 
 .about-col-2{
   flex-basis: 60%;
+}
+
+.sub-title {
+  font-size: 60px;
+  color: #ff00f4;
+  font-weight: 600;
+}
+
+/*------skills experience education section-----*/
+
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500px;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #9a7e98;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: .5s;
+}
+
+.tab-links.active-link::after {
+  width: 50%;
+}
+
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+/*------titles-----*/
+
+.tab-contents ul li span {
+  text-decoration: none;
+  color: #6f2020;
+  font-size: 14px;
+}
+
+.tab-contents {
+ display: none;
+ min-height: 160px;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+/*-----------projects-------*/
+
+#projects {
+  padding: 30px 0;
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.projects-list div {
+  background: #815656;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.projects-list div i {
+  color: #46845a;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.projects-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.projects-list div a {
+  text-decoration: none;
+  color: #fff;
+  margin-top: 12px;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.projects-list div:hover {
+  background: #ff00f4;
+  transform: translateY(-10px);
 }
