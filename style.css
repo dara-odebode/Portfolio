@@ -5,18 +5,20 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth; /*look at*/
+}
+
 body {
-background: rgb(137, 136, 180); /*same as header*/
+background: rgb(0, 0, 0); /*same as header*/
   color: #fff;
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 #header {
   width: 100%;
   height: 100vh;
 /* background-image: url(images/background.png); -->*/
-background-color: rgb(137, 136, 180);
+background-color: rgb(0, 0, 0);
 background-size: cover;
 background-position: center;
 }
@@ -179,8 +181,21 @@ nav ul li a:hover::after{
   margin-top: 50px;
 }
 
+.project {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
 .projects-list div {
-  background: #815656;
+  
   padding: 40px;
   font-size: 13px;
   font-weight: 300;
@@ -188,27 +203,181 @@ nav ul li a:hover::after{
   transition: background 0.5s, transform 0.5s;
 }
 
-.projects-list div i {
-  color: #46845a;
-  font-size: 50px;
-  margin-bottom: 30px;
+.projects-list div:hover {
+  transform: translateY(-10px);
 }
 
-.projects-list div h2 {
-  font-size: 30px;
+.layer {
+  width: 100%;
+  height: 100%;
+  /* can change black to background colour to loo clear */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(76, 22, 78, 0.5));
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center; /* move to bottom later */
+  font-size: 14px;
+}
+
+.layer h3 {
   font-weight: 500;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+}
+/*temporary*/
+.layer a {
+  margin-top: 20px;
+  color: #ff004f;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }
 
-.projects-list div a {
+.project:hover img {
+  transform: scale(1.1);
+}
+
+.work:hover .layer {
+  height: 100%;
+}
+
+.btn {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  padding: 14px 50px;
+  border-radius: 6px;
   text-decoration: none;
   color: #fff;
-  margin-top: 12px;
-  font-size: 20px;
-  display: inline-block;
+  transition: background 0.6s;
 }
 
-.projects-list div:hover {
-  background: #ff00f4;
-  transform: translateY(-10px);
+.btn:hover {
+  background: #ff004f;
+  transition: .5s;
+} 
+
+/*------contact-----*/
+
+.contact-left {
+  flex-basis: 35%;
+}
+
+.contact-right {
+  flex-basis: 60%;
+}
+
+.contact-left p {
+  margin-top: 10px;
+}
+.contact-left p i {
+  color: #ff00f4;
+  margin-right: 15px;
+  font-size: 15px;
+}
+
+.social-icons a{
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+  color: #ff00f4;
+  transform: translateY(-5px);
+  transition: .5s;
+}
+
+.btn.btn2 {
+display: inline-block;
+background: #ff00f4;
+}
+
+.contact-right form {
+  width: 100%;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 6px;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  color: #fff;
+  font-size: 18px;
+} 
+
+form btn2{
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+}
+ .copyright i {
+  color:#7d5a7c;
+ }
+
+ /*------for small screens-----*/
+
+@media (max-width: 600px) {
+  .header-text h1 {
+    font-size: 40px;
+  }
+
+  .header-text h1 span {
+    font-size: 30px;
+  }
+
+  .about-col-1 img {
+    width: 100%;
+  }
+
+  .about-col-2 {
+    flex-basis: 100%;
+    margin-top: 20px;
+  }
+
+  .tab-titles {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .tab-links {
+    margin-right: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+}
+
+#msg {
+  color: #61b752;
+  margin-top: -30px;
+  display: block;
 }
