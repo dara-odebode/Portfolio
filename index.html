@@ -4,7 +4,7 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Personal Portfolio</title>
+      <title>Dara Odebode</title>
       <link rel="stylesheet" href="style.css">
       <script src="https://kit.fontawesome.com/df386329b5.js" crossorigin="anonymous"></script>
 </head>
@@ -12,7 +12,7 @@
 <div id="header">
   <div class="container">
       <nav>
-        <h1> Dara Odebode </h1>
+        <p> Dara Odebode </p>
               <ul>
                   <li><a href="#header">Home</a></li>
                   <li><a href="#about">About Me</a></li>
@@ -21,8 +21,7 @@
               </ul>
       </nav>
       <div class="header-text">
-          <p>Student at the University of Surrey</p>
-          <h1> Hi, I'm <span>Dara </span><br> Odebode from London </h1>
+          <h1> <span>Dara Odebode </span>is a computer science student and an aspiring software engineer and UI/UX designer. </h1>
   </div>
 </div>
 
@@ -71,30 +70,27 @@
     <div class="container">
       <h1 class="sub-title">Projects</h1>
       <div class="projects-list">
-        <div class="project">
-          <img src="images/1.png"> <!---image of project (make clickable later)--->
-          <div class="layer">
-            <h3> Social Media App</h3>
-            <p> description of app</p>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <a href="#" class="project-link">
+          <div class="project">
+            <img src="images/1.png" alt="Social Media App">
+            <h3>Social Media App</h3>
+            <p class="project-desc">Description of app</p>
           </div>
-        </div>
-        <div class="project">
-          <img src="images/1.png">
-          <div class="layer">
-            <h3>App</h3>
-            <p> description of app</p>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </a>
+        <a href="#" class="project-link">
+          <div class="project">
+            <img src="images/1.png" alt="Social Media App">
+            <h3>Social Media App</h3>
+            <p class="project-desc">Description of app</p>
           </div>
-        </div>
-        <div class="project">
-          <img src="images/1.png">
-          <div class="layer">
-            <h3>Other App</h3>
-            <p> description of app</p>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </a>
+        <a href="#" class="project-link">
+          <div class="project">
+            <img src="images/1.png" alt="Social Media App">
+            <h3>Social Media App</h3>
+            <p class="project-desc">Description of app</p>
           </div>
-        </div>
+        </a>
       </div>
       <a href="#" class="btn">View All Projects</a>
     </div>
@@ -154,7 +150,7 @@
 
 </script>
 <script>
-  const scriptURL = '<https://script.google.com/macros/s/AKfycbyMwmGB8VnTCunXqvA89XyTEUVskl4ABfNiH4XbkRvTQzkox7g7VbK2BmoTJZ-Ayb_4/exec>'
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyMwmGB8VnTCunXqvA89XyTEUVskl4ABfNiH4XbkRvTQzkox7g7VbK2BmoTJZ-Ayb_4/exec'
   const form = document.forms['submit-to-google-sheet']
   
 
@@ -163,7 +159,7 @@
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
         msg.innerHTML = "Message sent successfully"
-        setTimeOut(function(){
+        setTimeout(function(){
           msg.innerHTML = ""
         }, 5000)
         form.reset()
