@@ -25,6 +25,14 @@ background-position: center;
   padding: 11px 7%;
 }
 
+
+h1 {
+  font-size: 200%;
+  margin-top: 20px;
+  margin-left: 0px;
+  color:  #a1468c;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -33,14 +41,7 @@ nav {
 }
 
 nav p {
-  font-size: 22px;;
-}
-
-h1 {
-  font-size: 200%;
-  margin-top: 20px;
-  margin-left: 0px;
-  color:  #a1468c;
+  font-size: 22px;
 }
 
 nav ul li{
@@ -109,6 +110,7 @@ nav ul li a:hover::after{
 #about {
   padding: 80px 0;
   color: #a1468c;
+  margin-bottom: 10%;
 }
 
 .row{
@@ -213,13 +215,18 @@ nav ul li a:hover::after{
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  text-align: center;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin-top: 30%;
 }
+
 
 .project:hover {
   transform: scale(1.02);
 }
-/* make smaller */
+
 .project img {
   width: 70%;
   border-radius: 10px 10px 0;
@@ -238,15 +245,16 @@ nav ul li a:hover::after{
 
 .project h3 {
   margin: 15px 0 10px;
-  color: #7364A0;
+  color: #a1468c;
   font-size: 20px;
+  font-weight: 1;
 }
 
-.project-desc {
-  font-size: 15px;
+.project h3 {
+  margin: 15px 0 10px;
   color: #a1468c;
-  margin: 0 auto 20px;
-  max-width: 90%;
+  font-size: 20px;
+  font-weight: 1;
 }
 
 .project:hover {
@@ -281,37 +289,16 @@ nav ul li a:hover::after{
 
 /*------contact-----*/
 
-.contact-left {
-  flex-basis: 35%;
+#contact .container {
+  padding: 40px;
 }
 
-.contact-right {
-  flex-basis: 60%;
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
 }
 
-.contact-left p {
-  margin-top: 10px;
-}
-.contact-left p i {
-  color: #a1468c;
-  margin-right: 15px;
-  font-size: 15px;
-}
-
-.social-icons a{
-  text-decoration: none;
-  font-size: 30px;
-  margin-right: 15px;
-  color: #a1468c;
-  display: inline-block;
-  transition: transform 0.5s;
-}
-
-.social-icons a:hover {
-  color: #a1468c;
-  transform: translateY(-5px);
-  transition: .5s;
-}
 
 .btn.btn2 {
 display: inline-block;
@@ -341,19 +328,6 @@ form .btn2{
   margin-top: 20px;
   cursor: pointer;
 }
-
-.copyright {
-  width: 100%;
-  text-align: left;
-  padding: 15px 0;
-  font-weight: 300;
-  font-size: 11px;
-  margin-bottom: 0%;
-  margin-top: 20px;
-}
- .copyright i {
-  color:#a1468c;
- }
 
  /*------for small screens-----*/
 
