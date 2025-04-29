@@ -173,7 +173,7 @@ nav ul li a:hover::after{
 }
 
 .tab-links.active-link::after {
-  width: 50%;
+  width: 30%;
 }
 
 .tab-contents ul li {
@@ -213,8 +213,8 @@ nav ul li a:hover::after{
 .projects-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
-  margin-top: 30px;
+  grid-gap: 0px;
+  margin-top: 20px;
 }
 
 .project {
@@ -239,7 +239,6 @@ nav ul li a:hover::after{
   border-radius: 2px;
   display: block;
   object-fit: cover;
-  margin-top: 0px;
   transition: transform 0.5s;
 }
 
@@ -302,6 +301,15 @@ nav ul li a:hover::after{
   padding: 40px;
 }
 
+#contact .sub-title {
+  margin-left: 40px;
+  font-size: 50px;
+}
+
+#contact .row {
+  margin-left: 40px;
+}
+
 .row {
   display: flex;
   flex-direction: row;
@@ -321,6 +329,7 @@ display: inline-block;
   font-size: 19px;
   color: #a1468c; 
   margin-bottom: 3%;
+  margin-left: 40px;
 }
 
 form input, form textarea {
