@@ -144,7 +144,7 @@ nav ul li a:hover::after{
 .tab-titles {
   display: flex;
   font-size: 400%;
-  margin: 20px 0 40px;
+  margin: 10px 0 0px;
 }
 
 .tab-links {
@@ -172,15 +172,16 @@ nav ul li a:hover::after{
 
 .tab-contents ul li {
   list-style: none;
-  margin: 10px 0;
+  margin: 19px 0;
 }
 
 /*------titles-----*/
 
 .tab-contents ul li span {
   text-decoration: none;
-  color: #a1468c;
-  font-size: 14px;
+  color: #7a1e64;
+  font-size: 16px;
+  font-weight: 550;
 }
 
 .tab-contents {
@@ -205,9 +206,9 @@ nav ul li a:hover::after{
 
 .projects-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 40px;
-  margin-top: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-top: 30px;
 }
 
 .project {
@@ -229,8 +230,10 @@ nav ul li a:hover::after{
 
 .project img {
   width: 70%;
-  border-radius: 10px 10px 0;
+  border-radius: 2px;
   display: block;
+  object-fit: cover;
+  margin-top: 0px;
   transition: transform 0.5s;
 }
 
