@@ -90,6 +90,7 @@ nav ul li a:hover::after{
 
 .header-text {
   margin-top: 20%;
+  font-weight: 10%;
   font-size: 30px;
   padding-bottom: 110px;
 }
@@ -107,97 +108,68 @@ nav ul li a:hover::after{
 
 /*------about section-----*/
 
-#about {
-  padding: 80px 0;
-  color: #a1468c;
-  margin-bottom: 5%;
-}
-
-.row{
+.about-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-left: 5%;
   flex-wrap: wrap;
+  margin-top: 150px;
+  margin-bottom: 20%;
 }
 
-.about-col-1{
-  flex-basis: 35%;
+.about-img {
+  flex-basis: 30%;
+  min-width: 100px;
 }
 
-.about-col-1 img{
-  width: 80%;
+.about-img img {
+  width: 85%;
   border-radius: 2px;
 }
 
-.about-col-2{
-  flex-basis: 60%;
+.about-text {
+  flex-basis: 65%;
+  min-width: 280px;
+  color: #4a2e49;
+}
+
+.about-greeting {
+  margin-left: 9px;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 40px;
+  color: #4a2e49;
+}
+
+.highlight-name {
+  color: #d185ac; 
 }
 
 
-#about .about-col-2 p{
-  flex-basis: 60%;
-  font-size: 18px;
-}
-
-.sub-title {
-  font-size: 60px;
-  color: #7364A0;
-  font-weight: 600;
-}
-
-/*------skills experience education section-----*/
-
-.tab-titles {
-  display: flex;
-  font-size: 1px;
-  margin: 10px 0 0px;
-}
-
-.tab-links {
-  margin-right: 50px;
+.about-text p {
   font-size: 20px;
-  font-weight: 500px;
-  cursor: pointer;
-  position: relative;
+  line-height: 1.8;
+  margin-top: 0%;
+  margin-right: 120px;
+  margin-bottom: 20px;
+  color: #5e3a5d;
 }
 
-.tab-links::after {
-  content: '';
-  width: 0;
-  height: 3px;
-  background: #73986F;
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  transition: .5s;
+.highlight-keyword {
+  color: #d185ac;
 }
 
-.tab-links.active-link::after {
-  width: 30%;
-}
-
-.tab-contents ul li {
-  list-style: none;
-  margin: 19px 0;
-}
-
-/*------titles-----*/
-
-.tab-contents ul li span {
+.link-hover {
+  color: #d185ac; /* original color */
   text-decoration: none;
-  color: #7a1e64;
-  font-size: 18px;
-  font-weight: 550;
+  transition: color 0.3s ease;
 }
 
-.tab-contents {
- display: none;
- min-height: 160px;
+.link-hover:hover {
+  color: #73986F; /* color on hover */
 }
 
-.tab-contents.active-tab {
-  display: block;
-}
 
 /*-----------projects-------*/
 
@@ -298,6 +270,7 @@ nav ul li a:hover::after{
 /*------contact-----*/
 
 #contact .container {
+  margin-top: 10%;
   padding: 40px;
 }
 
