@@ -9,14 +9,13 @@ html {
 }
 
 body {
-background: #F7F6E3; 
+background: #fffffc; 
   color:  #a1468c;
 }
 
 #header {
   width: 100%;
   height: 100vh;
-/* background-image: url(images/background.png); -->*/
 background-size: cover;
 background-position: center;
 }
@@ -88,22 +87,11 @@ nav ul li a:hover::after{
   color: #73986F; 
 }
 
-.header-text {
-  margin-top: 20%;
-  font-weight: 10%;
-  font-size: 30px;
-  padding-bottom: 110px;
-}
-
-.header-text h1 {
-  font-size: 50px;
-  color: #7364A0;
+.about-page .about-column-title {
   margin-top: 20px;
-}
-
-.header-text h1 span {
-  color: #7364A0;
-
+  font-size: 36px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
 }
 
 /*------about section-----*/
@@ -168,6 +156,61 @@ nav ul li a:hover::after{
 
 .link-hover:hover {
   color: #73986F; /* color on hover */
+}
+
+/*------about-----*/
+
+.about-page {  /* titles */
+  padding: 60px 0;
+  margin-left: 10%;
+  margin-top: 5%;
+  font-family: 'Georgia', serif;
+  color: #4a2727;
+}
+
+.about-columns {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 60px;
+  border-top: 1px solid #e4e4e4;
+  padding-top: 40px;
+}
+
+.about-columns.reverse{
+  flex-direction: row-reverse;
+  text-align: right; 
+  margin-right: 20%;
+}
+
+.about-column-title {
+  font-size: 50px !important;
+  font-weight: normal; 
+  flex: 0.5; /*space between title and text */
+  margin: 0px;
+}
+
+.about-columns.no-border {
+  border-top: none;
+}
+
+.about-history {
+  flex: 3;
+}
+
+.role-entry {
+  margin-bottom: 30px;
+}
+
+.role-entry p { /* paragraphs */
+  font-size: 22px;
+  color: #6e6e6e;
+  line-height: 1.6;
+}
+
+.role-entry em { /* headers */
+  color:#a1468c;
+  font-style: italic;
 }
 
 
@@ -270,13 +313,14 @@ nav ul li a:hover::after{
 /*------contact-----*/
 
 #contact .container {
-  margin-top: 10%;
+  margin-top: 4%;
   padding: 40px;
 }
 
 #contact .sub-title {
   margin-left: 40px;
-  font-size: 50px;
+  font-weight: lighter;
+  font-size: 40px;
 }
 
 #contact .row {
@@ -301,7 +345,7 @@ display: inline-block;
 #contact p {
   font-size: 19px;
   color: #a1468c; 
-  margin-bottom: 3%;
+  margin-bottom: 0%;
   margin-left: 40px;
 }
 
@@ -321,7 +365,7 @@ form input, form textarea {
 
 .contact-links {
   margin-top: 14px;
-  font-size: 19px;
+  font-size: 25px;
 }
 
 .contact-links a {
