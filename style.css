@@ -79,7 +79,7 @@ nav ul li a:hover::after{
 
 .nav-icons a {
   color: #a1468c; 
-  font-size: 23px;
+  font-size: 27px;
   transition: color 0.3s;
 }
 
@@ -359,7 +359,7 @@ form input, form textarea {
   background: #ffffff;
   border: 2px solid #a1468c;;
   padding: 15px;
-  color: #a1468c;
+  color: #4a2727;
   font-size: 18px;
 } 
 
