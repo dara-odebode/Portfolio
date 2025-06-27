@@ -94,7 +94,7 @@ nav ul li a:hover::after{
   margin-bottom: 20px;
 }
 
-/*------about section-----*/
+/*------home section-----*/
 
 .about-container {
   display: flex;
@@ -102,7 +102,7 @@ nav ul li a:hover::after{
   gap: 40px;
   margin-left: 5%;
   flex-wrap: wrap;
-  margin-top: 150px;
+  margin-top: 130px;
   margin-bottom: 20%;
 }
 
@@ -163,7 +163,7 @@ nav ul li a:hover::after{
 .about-page {  /* titles */
   padding: 60px 0;
   margin-left: 10%;
-  margin-top: 5%;
+  margin-top: 3%;
   font-family: 'Georgia', serif;
   color: #4a2727;
 }
@@ -229,7 +229,7 @@ nav ul li a:hover::after{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .project {
@@ -241,7 +241,7 @@ nav ul li a:hover::after{
   display: flex;
   flex-direction: column;
   align-items: center; 
-  margin-top: 30%;
+  margin-top: 21%;
 }
 
 
