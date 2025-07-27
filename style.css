@@ -135,7 +135,7 @@ nav ul li a:hover::after{
 
 
 .about-text p {
-  font-size: 15px;
+  font-size: 20px;
   line-height: 1.8;
   margin-top: 0%;
   margin-right: 40px;
@@ -202,7 +202,7 @@ nav ul li a:hover::after{
 }
 
 .role-entry p { /* paragraphs */
-  font-size: 16px;
+  font-size: 21px;
   color: #6e6e6e;
   line-height: 1.6;
 }
