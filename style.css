@@ -202,7 +202,7 @@ nav ul li a:hover::after{
 }
 
 .role-entry p { /* paragraphs */
-  font-size: 22px;
+  font-size: 21px;
   color: #6e6e6e;
   line-height: 1.6;
 }
