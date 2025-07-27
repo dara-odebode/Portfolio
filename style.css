@@ -16,8 +16,8 @@ background: #fffffc;
 #header {
   width: 100%;
   height: 100vh;
-background-size: cover;
-background-position: center;
+  background-size: cover;
+  background-position: center;
 }
 
 .container {
@@ -100,20 +100,20 @@ nav ul li a:hover::after{
   display: flex;
   align-items: flex-start;
   gap: 40px;
-  margin-left: 5%;
   flex-wrap: wrap;
-  margin-top: 130px;
+  margin-top: 90px;
   margin-bottom: 20%;
 }
 
 .about-img {
+  margin-top: 8px;
   flex-basis: 30%;
   min-width: 100px;
 }
 
 .about-img img {
-  width: 85%;
-  border-radius: 2px;
+  width: 100%;
+  border-radius: 1px;
 }
 
 .about-text {
@@ -123,10 +123,9 @@ nav ul li a:hover::after{
 }
 
 .about-greeting {
-  margin-left: 9px;
-  font-size: 40px;
+  font-size: 42px;
   font-weight: bold;
-  margin-top: 40px;
+  margin-top: 20px;
   color: #4a2e49;
 }
 
@@ -139,7 +138,7 @@ nav ul li a:hover::after{
   font-size: 20px;
   line-height: 1.8;
   margin-top: 0%;
-  margin-right: 120px;
+  margin-right: 40px;
   margin-bottom: 20px;
   color: #5e3a5d;
 }
@@ -204,7 +203,7 @@ nav ul li a:hover::after{
 
 .role-entry p { /* paragraphs */
   font-size: 22px;
-  color: #6e6e6e;
+  color: #5a5959;
   line-height: 1.6;
 }
 
@@ -264,13 +263,6 @@ nav ul li a:hover::after{
   font-weight: 300;
   border-radius: 10px;
   transition: background 0.5s, transform 0.5s;
-}
-
-.project h3 {
-  margin: 15px 0 10px;
-  color: #a1468c;
-  font-size: 20px;
-  font-weight: 1;
 }
 
 .project h3 {
