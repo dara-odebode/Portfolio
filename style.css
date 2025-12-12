@@ -228,6 +228,7 @@ nav ul li a:hover::after{
   color:#4a2727;
   font-size: 19px;
   margin-top: -1%;
+  list-style: none;
   margin-right: 20%;
 
 }
@@ -236,6 +237,7 @@ nav ul li a:hover::after{
   color:#4a2727;
   font-size: 19px;
   margin-top: -1%;
+  list-style: none;
   margin-bottom: 6%;
 }
 
