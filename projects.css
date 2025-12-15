@@ -1,0 +1,159 @@
+*{
+    padding: 0px;
+    font-family: 'Georgia', serif;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth; 
+  }
+  
+  body {
+  background: #fffffc; 
+    color:  #a1468c;
+  }
+  
+  #header {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .container {
+    padding: 11px 7%;
+  }
+  
+  
+  h1 {
+    font-size: 200%;
+    margin-top: 20px;
+    margin-left: 0px;
+    color:  #a1468c;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  nav p {
+    font-size: 22px;
+  }
+  
+  nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+  }
+  
+  nav ul li a{
+    color: #a1468c;
+    text-decoration: none;
+    font-size: 20px; 
+    position: relative;
+  }
+  
+  nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #73986F;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+  }
+  
+  nav ul li a:hover::after{
+    width: 100%;
+    transition: .3s;
+  }
+  
+  .nav-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .nav-icons a {
+    color: #a1468c; 
+    font-size: 27px;
+    transition: color 0.3s;
+  }
+  
+  .nav-icons a:hover {
+    color: #73986F; 
+  }
+
+  /* Projects */
+  
+  .about-page .project-titles {
+    margin-top: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+
+  .about-page {  /* titles */
+    padding: 60px 0;
+    margin-left: 10%;
+    margin-top: 3%;
+    color: #4a2727;
+  }
+  
+  .about-columns {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 2%;
+    border-top: 1px solid #e4e4e4;
+    padding-top: 40px;
+  }
+  
+  .about-columns.reverse {
+    flex-direction: row-reverse;
+    text-align: right; 
+    margin-right: 17%;
+  }
+  
+  .project-titles {
+    font-size: 80px !important;
+    font-weight: normal; 
+    flex: 0.5; /*space between title and text */
+    margin: 0px;
+  }
+  
+  .about-columns.no-border {
+    border-top: none;
+  }
+  
+  .about-history {
+    flex: 3;
+  }
+  
+  .role-entry {
+    margin-bottom: 30px;
+  }
+  
+  .role-entry p { /* paragraphs */
+    font-size: 21px;
+    color: #6e6e6e;
+    line-height: 1.6;
+  }
+  
+  .role-entry-right p { /* right paragraphs */
+    font-size: 21px;
+    color: #6e6e6e;
+    line-height: 1.6;
+  }
+  
+  .role-entry em { /* headers */
+    color:#a1468c;
+    font-style: italic;
+  }
+  
+  .role-entry-right em { /* right headers */
+    color:#a1468c;
+    font-style: italic;
+  }
