@@ -97,7 +97,7 @@
 
   .about-page {  /* titles */
     padding: 60px 0;
-    margin-left: 10%;
+    margin-left: 2%;
     margin-top: 3%;
     color: #4a2727;
   }
@@ -114,7 +114,7 @@
   .about-columns.reverse {
     flex-direction: row-reverse;
     text-align: right; 
-    margin-right: 17%;
+    margin-right: 5%;
   }
   
   .project-titles {
@@ -157,3 +157,20 @@
     color:#a1468c;
     font-style: italic;
   }
+
+  /* link to case studies*/
+  .case-study-link {
+        margin-top: 13px;
+        font-size: 24px;
+      }
+      
+    .case-study-link a {
+        color: #4a2727;
+        text-decoration: line;
+        transition: text-decoration 0.3s, color 0.3s;
+      }
+      
+      .case-study-link a:hover {
+        text-decoration: underline;
+        color: #73986F;
+      }
