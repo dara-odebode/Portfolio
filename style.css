@@ -101,7 +101,7 @@ nav ul li a:hover::after{
   font-family: 'Playfair Display', serif;
   font-weight: normal;
   color: #5e3a5d;
-  margin-top: 5%;
+  margin-top: 2%;
   text-align: center;
   letter-spacing: 3px;
 }
@@ -347,7 +347,7 @@ nav ul li a:hover::after{
 
 #contact .sub-title {
   margin-left: 40px;
-  font-weight: lighter;
+  font-weight: normal;
   font-size: 40px;
 }
 
@@ -392,8 +392,8 @@ form input, form textarea {
 } 
 
 .contact-links {
-  margin-top: 13px;
-  font-size: 30px;
+  margin-top: 16px;
+  font-size: 40px;
 }
 
 .contact-links a {

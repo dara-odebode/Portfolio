@@ -208,8 +208,8 @@
       /* BLOOM AND BALANCE */
       
       .project-image-bloom img {
-        max-width: 500px;
-        width: 300%;
+        max-width: 485px;
+        width: 290%;
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
