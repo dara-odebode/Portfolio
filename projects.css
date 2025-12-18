@@ -118,7 +118,7 @@
   }
   
   .project-titles {
-    font-size: 80px !important;
+    font-size: 70px !important;
     font-weight: normal; 
     flex: 0.5; /*space between title and text */
     margin: 0px;
