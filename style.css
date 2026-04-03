@@ -171,7 +171,7 @@ nav ul li a:hover::after{
 .about-page {  /* titles */
   padding: 60px 0;
   margin-left: 10%;
-  margin-top: 3%;
+  margin-top: 1%;
   font-family: 'Georgia', serif;
   color: #4a2727;
 }
